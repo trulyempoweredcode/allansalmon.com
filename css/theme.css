@@ -44,8 +44,8 @@
   --font-weight-normal: 500;
 
   /* Editorial type scale (Polish Standard 9), tuned down for Sora, a wide sans */
-  --text-h1-desktop: clamp(2.5rem, 4.6vw, 4.25rem);
-  --text-h2-desktop: clamp(1.9rem, 3.1vw, 3rem);
+  --text-h1-desktop: clamp(2.5rem, 3.8vw, 3.25rem);
+  --text-h2-desktop: clamp(1.9rem, 2.6vw, 2.375rem);
   --text-h3-desktop: 1.5rem;
 
   /* Brand tagline in sentence case, readable size */
