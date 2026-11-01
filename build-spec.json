@@ -248,11 +248,14 @@
   "source_capture": "portal-content/source-capture",
   "source_map": {
     "privacy-policy": "privacy",
-    "one-page-home": ""
+    "one-page-home": "allansalmon.com"
   },
   "content_dropped": {
     "one-page-home": {
       "allansalmoncounselling@gmail.com": "Allan asked for a new address on his design form (31-10-2026: \"I would like a new email address. Ideally hello@allansalmon.com\"), so the site shows hello@allansalmon.com instead of his old Gmail."
     }
+  },
+  "orphan_ok": {
+    "allansalmon.com": "the home page: every page links to it as href=\"./\" (brand and Home in the nav), which this check does not resolve under the github.io project path; it passed against a root-hosted copy on 01-11-2026"
   }
 }
