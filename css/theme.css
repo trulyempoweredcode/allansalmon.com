@@ -1,0 +1,70 @@
+/* =============================================
+   THEME: Allan Salmon (client-local palette, local-themes/palettes/allan-salmon.json)
+   Logo yellow, with the plum, amber and leaf green of Allan's own mood photos
+   Font Pairing: Soft Geometric / soft-geometric (Sora + Work Sans), Style 4
+   ============================================= */
+
+/* --- Google Fonts --- */
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Work+Sans:wght@400;500;600&display=swap');
+
+/* --- Theme Variables --- */
+:root {
+  /* Colour Palette */
+  --color-primary: #58394A;
+  --color-primary-light: #7A5868;
+  --color-primary-dark: #3E2634;
+  --color-secondary: #FDCA04;
+  --color-secondary-light: #FEDD5C;
+  --color-secondary-dark: #8A6400;
+  --color-accent: #4F6E52;
+  --color-accent-light: #7E9A7F;
+
+  --color-bg: #FAF7F2;
+  --color-bg-alt: #F4ECE2;
+  --color-bg-dark: #2F2129;
+  --color-surface: #FFFFFF;
+  --color-surface-alt: #F7F2EC;
+
+  --color-text: #352D27;
+  --color-text-light: #5C5149;
+  --color-text-inverse: #FAF7F2;
+  --color-text-heading: #2F2129;
+
+  --color-border: #E6DCD0;
+  --color-border-light: #EFE8DF;
+
+  --color-success: #4F6E52;
+  --color-error: #B3261E;
+
+  /* Typography */
+  --font-heading: 'Sora', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Work Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Body copy at 500: no thin text on client copy */
+  --font-weight-normal: 500;
+
+  /* Editorial type scale (Polish Standard 9), tuned down for Sora, a wide sans */
+  --text-h1-desktop: clamp(2.5rem, 4.6vw, 4.25rem);
+  --text-h2-desktop: clamp(1.9rem, 3.1vw, 3rem);
+  --text-h3-desktop: 1.5rem;
+
+  /* Brand tagline in sentence case, readable size */
+  --nav-title-size: 1rem;
+  --nav-title-transform: none;
+  --nav-title-tracking: 0;
+
+  /* Yellow buttons carry dark ink (white on #FDCA04 fails contrast) */
+  --btn-accent-text: #2F2129;
+  --btn-accent-hover-text: #2F2129;
+}
+
+/* Library token hooks only (no new components) */
+:root {
+  --trust-bar-logo-height: 110px;
+  --nav-title-phone-display: none;
+}
+
+/* Brand bands: his logo yellow carries dark ink; his leaf green keeps the default white */
+:root {
+  --band-2-text: #2F2129;
+}

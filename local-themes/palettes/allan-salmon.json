@@ -1,0 +1,28 @@
+{
+  "id": "allan-salmon",
+  "name": "Allan Salmon",
+  "description": "Allan Salmon's own colours: the logo yellow #FDCA04, and the dusky plum, amber light and leaf green of the two mood photos he uploaded on 31-10-2026 (IMG_0548, IMG_0546), on the warm cream of his existing site. Client-local, never in the shared library.",
+  "colors": {
+    "primary": "#58394A",
+    "primary-light": "#7A5868",
+    "primary-dark": "#3E2634",
+    "secondary": "#FDCA04",
+    "secondary-light": "#FEDD5C",
+    "secondary-dark": "#8A6400",
+    "accent": "#4F6E52",
+    "accent-light": "#7E9A7F",
+    "bg": "#FAF7F2",
+    "bg-alt": "#F4ECE2",
+    "bg-dark": "#2F2129",
+    "surface": "#FFFFFF",
+    "surface-alt": "#F7F2EC",
+    "text": "#352D27",
+    "text-light": "#5C5149",
+    "text-inverse": "#FAF7F2",
+    "text-heading": "#2F2129",
+    "border": "#E6DCD0",
+    "border-light": "#EFE8DF",
+    "success": "#4F6E52",
+    "error": "#B3261E"
+  }
+}

@@ -1,0 +1,15 @@
+# Local working files, not part of the deployed site (world-readable on GitHub Pages)
+shots/
+reference-demo/
+reference-original/
+portal-content/
+client-brief.md
+client-preferences.json
+build-notes.md
+images.json
+content-checklist.html
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini

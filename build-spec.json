@@ -1,0 +1,258 @@
+{
+  "client": "allansalmon.com",
+  "platform": "flat",
+  "reference": {
+    "kind": "client-picked",
+    "demo": "demo-nutritionist",
+    "why": "Allan picked Style 4 on his design form (no demo URL pasted), which resolves to demo-nutritionist: half-and-half reversed hero, split bands, card overview, CTA banner. Deliberate deviations, decided before building: palette is his own (logo yellow plus the plum, amber and leaf green of the two mood photos he uploaded) instead of calm-sage, because he said he likes yellow and asked us to use those photos as the palette; he has no testimonials, so the demo's testimonial bands become his own content (his counselling room on home, his creative tools on services); an announcement strip carries his 'currently fully booked' note on every page; no FAQ page because he has no FAQ content. After the first blind critic (01-11-2026): the hero text column is widened (hero--half--text-wide) so the three tick pills sit on one row; the CTA bands use his logo yellow (band band--2) and the home room gallery sits on his leaf green (band band--3), so the site carries his yellow brand and a second calm tint rather than one plum family."
+  },
+  "palette_slug": "allan-salmon",
+  "pairing_slug": "soft-geometric",
+  "hero_type": "hero hero--half hero--half--text-wide hero--reverse",
+  "nav_style": "default",
+  "pages": [
+    {
+      "slug": "index",
+      "archetype": "home",
+      "sections": [
+        "notice",
+        "nav",
+        "hero",
+        "why-work-with-me",
+        "services-overview",
+        "the-space",
+        "trust",
+        "cta",
+        "footer"
+      ]
+    },
+    {
+      "slug": "services",
+      "archetype": "services",
+      "sections": [
+        "notice",
+        "nav",
+        "page-header",
+        "services",
+        "creative-tools",
+        "the-room",
+        "cta",
+        "footer"
+      ]
+    },
+    {
+      "slug": "about",
+      "archetype": "about",
+      "sections": [
+        "notice",
+        "nav",
+        "about-hero",
+        "qualifications",
+        "approach",
+        "the-space",
+        "cta",
+        "footer"
+      ]
+    },
+    {
+      "slug": "fees",
+      "archetype": "pricing",
+      "sections": [
+        "notice",
+        "nav",
+        "page-header",
+        "what-to-expect",
+        "pricing",
+        "cta",
+        "footer"
+      ]
+    },
+    {
+      "slug": "contact",
+      "archetype": "contact",
+      "sections": [
+        "notice",
+        "nav",
+        "page-header",
+        "contact-form",
+        "map",
+        "footer"
+      ]
+    },
+    {
+      "slug": "privacy",
+      "archetype": "legal",
+      "sections": [
+        "notice",
+        "nav",
+        "page-header",
+        "privacy-content",
+        "footer"
+      ]
+    },
+    {
+      "slug": "cookies-policy",
+      "archetype": "legal",
+      "sections": [
+        "notice",
+        "nav",
+        "page-header",
+        "cookies-content",
+        "footer"
+      ]
+    },
+    {
+      "slug": "404",
+      "archetype": "error",
+      "sections": [
+        "notice",
+        "nav",
+        "404",
+        "404-message",
+        "footer"
+      ]
+    }
+  ],
+  "image_slots": [
+    {
+      "id": "home-hero",
+      "page": "index",
+      "slot": "images/hero-room.jpg",
+      "source": "client",
+      "intent": "his counselling room corner: yellow armchair, bookshelf, lamps (portal IMG_6308)"
+    },
+    {
+      "id": "home-portrait",
+      "page": "index",
+      "slot": "images/allan-salmon.jpg",
+      "source": "client",
+      "intent": "Allan's portrait, as on his existing site"
+    },
+    {
+      "id": "home-room-1",
+      "page": "index",
+      "slot": "images/room-chairs.jpg",
+      "source": "client",
+      "intent": "two green armchairs (IMG_6311)"
+    },
+    {
+      "id": "home-room-2",
+      "page": "index",
+      "slot": "images/room-corner.jpg",
+      "source": "client",
+      "intent": "yellow chair corner (IMG_6304)"
+    },
+    {
+      "id": "home-room-3",
+      "page": "index",
+      "slot": "images/room-bowls.jpg",
+      "source": "client",
+      "intent": "sound bowls (IMG_6306)"
+    },
+    {
+      "id": "home-room-4",
+      "page": "index",
+      "slot": "images/room-fidgets.jpg",
+      "source": "client",
+      "intent": "fidget toys on a side table (IMG_6303)"
+    },
+    {
+      "id": "home-trust",
+      "page": "index",
+      "slot": "images/ncps-logo.png",
+      "source": "client",
+      "intent": "NCPS logo from his existing site"
+    },
+    {
+      "id": "services-leaf",
+      "page": "services",
+      "slot": "images/leaf-light.jpg",
+      "source": "client",
+      "intent": "his mood photo IMG_0546, leaf against a pink ceiling"
+    },
+    {
+      "id": "services-tool-1",
+      "page": "services",
+      "slot": "images/tools-archetype-cards.jpg",
+      "source": "client",
+      "intent": "archetype cards (existing site)"
+    },
+    {
+      "id": "services-tool-2",
+      "page": "services",
+      "slot": "images/tools-therapy-cards.jpg",
+      "source": "client",
+      "intent": "therapy cards (existing site)"
+    },
+    {
+      "id": "services-tool-3",
+      "page": "services",
+      "slot": "images/tools-values-cards.jpg",
+      "source": "client",
+      "intent": "values cards (IMG_6325)"
+    },
+    {
+      "id": "services-tool-4",
+      "page": "services",
+      "slot": "images/tools-journey-cards.jpg",
+      "source": "client",
+      "intent": "journey cards (IMG_6319)"
+    },
+    {
+      "id": "services-tool-5",
+      "page": "services",
+      "slot": "images/tools-sand-tray.jpg",
+      "source": "client",
+      "intent": "sand tray close-up (IMG_6294)"
+    },
+    {
+      "id": "services-tool-6",
+      "page": "services",
+      "slot": "images/tools-sandstory-scene.jpg",
+      "source": "client",
+      "intent": "sandstory scene (IMG_6301)"
+    },
+    {
+      "id": "services-room",
+      "page": "services",
+      "slot": "images/creative-pens.jpg",
+      "source": "client",
+      "intent": "pens and a colouring book (IMG_6320)"
+    },
+    {
+      "id": "about-portrait",
+      "page": "about",
+      "slot": "images/allan-salmon.jpg",
+      "source": "client",
+      "intent": "Allan's portrait"
+    },
+    {
+      "id": "fees-dolls",
+      "page": "fees",
+      "slot": "images/nesting-dolls.jpg",
+      "source": "client",
+      "intent": "yellow nesting dolls (IMG_6334)"
+    },
+    {
+      "id": "fees-warm-light",
+      "page": "fees",
+      "slot": "images/warm-light.jpg",
+      "source": "client",
+      "intent": "his mood photo IMG_0548, amber light on a wall"
+    }
+  ],
+  "repeating_archetype": "services",
+  "slice_approved": "2026-11-01T08:47:26Z",
+  "source_site": "https://allansalmon.com",
+  "built_site": "https://trulyempoweredcode.github.io/allansalmon.com",
+  "source_capture": "portal-content/source-capture",
+  "source_map": {
+    "privacy-policy": "privacy",
+    "one-page-home": ""
+  },
+  "content_dropped": {
+    "one-page-home": {
+      "allansalmoncounselling@gmail.com": "Allan asked for a new address on his design form (31-10-2026: \"I would like a new email address. Ideally hello@allansalmon.com\"), so the site shows hello@allansalmon.com instead of his old Gmail."
+    }
+  }
+}
