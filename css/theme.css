@@ -1,81 +1,125 @@
 /* =============================================
-   THEME: Allan Salmon (client-local palette, local-themes/palettes/allan-salmon.json)
-   Logo yellow, with the plum, amber and leaf green of Allan's own mood photos
-   Font Pairing: Soft Geometric / soft-geometric (Sora + Work Sans), Style 4
+   THEME: Allan Salmon, matched to his original site (allansalmon.com, measured 09-11-2026)
+   Allan asked for an exact replica of his original look: Manrope throughout, light headings,
+   cream and greige grounds, small muted body text, 2px corners, no shadows, sage step numbers.
+   His one colour request ("starts off brown and then goes a bit more purple") is carried by the
+   alternate bands, which drift from his original greige to a faint mauve down the page.
+   Body text stays at 16px (his original used 15px): legibility floor.
    ============================================= */
 
 /* --- Google Fonts --- */
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Work+Sans:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&display=swap');
 
 /* --- Theme Variables --- */
 :root {
-  /* Colour Palette */
-  --color-primary: #58394A;
-  --color-primary-light: #7A5868;
-  --color-primary-dark: #3E2634;
-  --color-secondary: #FDCA04;
-  --color-secondary-light: #FEDD5C;
-  --color-secondary-dark: #8A6400;
-  --color-accent: #4F6E52;
-  --color-accent-light: #7E9A7F;
+  /* Colour palette, measured from the original */
+  --color-primary: #352D27;
+  --color-primary-light: #5A4D43;
+  --color-primary-dark: #221C18;
+  --color-secondary: #D7B675;
+  --color-secondary-light: #EFE2C6;
+  --color-secondary-dark: #7E7167;
+  --color-accent: #99AD90;
+  --color-accent-light: #C9D4C3;
 
-  --color-bg: #FAF7F2;
-  --color-bg-alt: #F4ECE2;
-  --color-bg-dark: #2F2129;
-  --color-surface: #FFFFFF;
-  --color-surface-alt: #F7F2EC;
+  --color-bg: #F8F5F2;
+  --color-bg-alt: #F0EBE6;
+  --color-bg-dark: #352D27;
+  --color-surface: #F8F5F2;
+  --color-surface-alt: #F0EBE6;
 
-  --color-text: #352D27;
-  --color-text-light: #5C5149;
-  --color-text-inverse: #FAF7F2;
-  --color-text-heading: #2F2129;
+  --color-text: #6B5F56;
+  --color-text-light: #7A6D63;
+  --color-text-inverse: #F8F5F2;
+  --color-text-heading: #352D27;
+  --text-muted: #7A6D63;
 
-  --color-border: #E6DCD0;
-  --color-border-light: #EFE8DF;
+  --color-border: #DED7CF;
+  --color-border-light: #E8E2DB;
 
-  --color-success: #4F6E52;
+  --color-success: #6E8A63;
   --color-error: #B3261E;
 
-  /* Typography */
-  --font-heading: 'Sora', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --font-body: 'Work Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  /* Typography: Manrope for everything, light headings */
+  --font-heading: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 500;
+  --font-weight-bold: 400;
+  --h1-weight: 300;
+  --h2-weight: 300;
+  --h3-weight: 500;
+  --heading-weight: 300;
+  --strong-weight: 600;
+  --heading-tracking: normal;
 
-  /* Body copy at 500: no thin text on client copy */
-  --font-weight-normal: 500;
+  --text-sm: 1rem;
+  --text-base: 1rem;
+  --text-md: 1rem;
+  --text-h1-desktop: 3rem;
+  --text-h2-desktop: 3rem;
+  --text-h2: 2.25rem;
+  --text-h3-desktop: 1.25rem;
+  --text-h3: 1.25rem;
+  --line-height-normal: 1.625;
+  --line-height-relaxed: 1.625;
 
-  /* Editorial type scale (Polish Standard 9), tuned down for Sora, a wide sans */
-  --nav-height: 88px; /* 16px of white space above and below the 56px logo */
-  --text-h1-desktop: clamp(2.5rem, 3.8vw, 3.25rem);
-  --text-h2-desktop: clamp(1.9rem, 2.6vw, 2.375rem);
-  --text-h3-desktop: 1.5rem;
+  /* Square-ish corners, flat surfaces */
+  --radius-sm: 2px;
+  --radius-md: 2px;
+  --radius-lg: 2px;
+  --radius-xl: 2px;
+  --aesthetic-radius: 2px;
+  --aesthetic-radius-pill: 2px;
+  --btn-radius: 2px;
+  --form-input-radius: 2px;
+  --contact-form-radius: 2px;
+  --shadow-sm: none;
+  --shadow-md: none;
+  --shadow-lg: none;
+  --aesthetic-shadow-card: none;
+  --aesthetic-border-width: 0px;
 
-  /* Brand tagline in sentence case, readable size */
-  --nav-title-size: 1rem;
-  --nav-title-transform: none;
-  --nav-title-tracking: 0;
+  /* Buttons: quiet, like the original */
+  --btn-weight: 400;
+  --btn-font-size: 1rem;
+  --btn-transform: none;
+  --btn-tracking: normal;
 
-  /* Yellow buttons carry dark ink (white on #FDCA04 fails contrast) */
-  --btn-accent-text: #2F2129;
-  --btn-accent-hover-text: #2F2129;
+  /* Header: text wordmark, small muted links */
+  --nav-height: 99px;
+  --nav-name-size: 1.5rem;
+  --nav-name-weight: 500;
+  --nav-name-color: #352D27;
+  --nav-title-size: 0.75rem;
+  --nav-title-transform: uppercase;
+  --nav-title-tracking: 0.25em;
+  --nav-link-size: 1rem;
+  --nav-link-weight: 400;
+  --nav-title-phone-display: block;
+
+  /* Generous section spacing, as on the original */
+  --section-padding-desktop: 8rem;
+
+  /* Light footer, as on the original */
+  --footer-card-bg: #F0EBE6;
 }
 
 /* Library token hooks only (no new components) */
 :root {
   --trust-bar-logo-height: 110px;
-  --nav-title-phone-display: none;
 }
 
-/* Brand bands, one-page layout (Allan, 09-11-2026: "starts off brown and then goes a bit more purple").
-   Down the page the tinted bands move from warm brown (1) through taupe (2) and mauve (3) to deeper mauve (4),
-   ending on the plum footer. All light, so all carry dark ink. */
+/* Alternate bands: original greige drifting to a faint mauve down the page
+   (Allan, 09-11-2026: "starts off brown and then goes a bit more purple"). All carry dark ink. */
 :root {
-  --color-bg-alt: #EFE2D4;
-  --band-1-bg: #EDE0D2;
-  --band-1-text: #2F2129;
-  --band-2-bg: #E6D9D3;
-  --band-2-text: #2F2129;
-  --band-3-bg: #E4D7E1;
-  --band-3-text: #2F2129;
-  --band-4-bg: #DCCBDB;
-  --band-4-text: #2F2129;
+  --band-1-bg: #F0EBE6;
+  --band-1-text: #352D27;
+  --band-2-bg: #EFE9E7;
+  --band-2-text: #352D27;
+  --band-3-bg: #EEE8EA;
+  --band-3-text: #352D27;
+  --band-4-bg: #EDE6EC;
+  --band-4-text: #352D27;
 }
