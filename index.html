@@ -26,9 +26,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link rel="stylesheet" href="css/base.css?v=3">
-  <link rel="stylesheet" href="css/components.css?v=3">
-  <link rel="stylesheet" href="css/theme.css?v=3">
+  <link rel="stylesheet" href="css/base.css?v=4">
+  <link rel="stylesheet" href="css/components.css?v=4">
+  <link rel="stylesheet" href="css/theme.css?v=4">
   <!-- PROFILE:schema -->
   <script type="application/ld+json">
   {
@@ -56,12 +56,6 @@
 
   <a href="#main" class="skip-link">Skip to main content</a>
 
-  <!-- SECTION: notice -->
-  <div class="announcement-bar announcement-bar--subtle">
-    I am currently fully booked, but you are welcome to get in touch about waiting times.<a href="contact.html">Contact me</a>
-  </div>
-  <!-- /SECTION: notice -->
-
   <!-- SECTION: nav -->
   <nav class="nav" role="navigation" aria-label="Main navigation">
     <div class="container nav__inner">
@@ -69,16 +63,15 @@
         <!-- PROFILE:logo --><img src="images/logo-mark.png" alt="" class="nav__logo" width="240" height="240"><!-- /PROFILE:logo -->
         <div class="nav__brand-text">
           <span class="nav__name"><!-- PROFILE:site_title -->Allan Salmon<!-- /PROFILE:site_title --></span>
-          <span class="nav__title"><!-- PROFILE:site_slogan -->Counselling in Fareham and online<!-- /PROFILE:site_slogan --></span>
+          <span class="nav__title"><!-- PROFILE:site_slogan -->Counselling<!-- /PROFILE:site_slogan --></span>
         </div>
       </a>
       <div class="nav__links">
-        <a href="./" class="nav__link nav__link--active" aria-current="page">Home</a>
-        <a href="about.html" class="nav__link">About</a>
-        <a href="services.html" class="nav__link">Services</a>
-        <a href="fees.html" class="nav__link">Fees</a>
-        <a href="contact.html" class="nav__link">Contact</a>
-        <a href="contact.html#contact-form" class="btn btn--primary nav__cta">Ask about availability</a>
+        <a href="#about" class="nav__link">About</a>
+        <a href="#services" class="nav__link">Services</a>
+        <a href="#what-to-expect" class="nav__link">What to Expect</a>
+        <a href="#fees" class="nav__link">Fees</a>
+        <a href="#contact" class="btn btn--primary nav__cta">Contact</a>
       </div>
       <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
         <span class="nav__toggle-bar"></span>
@@ -87,12 +80,11 @@
       </button>
     </div>
     <div class="nav__mobile" id="mobile-menu" role="menu">
-      <a href="./" class="nav__link nav__link--active" role="menuitem" aria-current="page">Home</a>
-      <a href="about.html" class="nav__link" role="menuitem">About</a>
-      <a href="services.html" class="nav__link" role="menuitem">Services</a>
-      <a href="fees.html" class="nav__link" role="menuitem">Fees</a>
-      <a href="contact.html" class="nav__link" role="menuitem">Contact</a>
-      <a href="contact.html#contact-form" class="btn btn--primary" role="menuitem">Ask about availability</a>
+      <a href="#about" class="nav__link" role="menuitem">About</a>
+      <a href="#services" class="nav__link" role="menuitem">Services</a>
+      <a href="#what-to-expect" class="nav__link" role="menuitem">What to Expect</a>
+      <a href="#fees" class="nav__link" role="menuitem">Fees</a>
+      <a href="#contact" class="btn btn--primary" role="menuitem">Contact</a>
     </div>
   </nav>
   <!-- /SECTION: nav -->
@@ -100,53 +92,32 @@
   <main id="main">
 
     <!-- SECTION: hero -->
-    <section class="hero hero--half hero--half--text-wide hero--reverse">
+    <section class="hero hero--minimal">
       <div class="container hero__inner">
         <div class="hero__content">
-          <span class="hero__label">Counselling in Fareham and online</span>
-          <h1 class="hero__heading">A space to be truly heard and seen</h1>
-          <p class="hero__text hero__text--lead">Counselling can be a space for you to make sense of your past, to honour the present, and to move towards a future that's right for you.</p>
-          <div class="hero__actions">
-            <a href="contact.html#contact-form" class="btn btn--primary">Ask about availability</a>
-            <a href="services.html" class="btn btn--secondary">How I can help</a>
-          </div>
-          <ul class="hero__ticks hero__ticks--bold">
-            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> MNCPS accredited</li>
-            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Fareham and online</li>
-            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Free first call</li>
-          </ul>
-        </div>
-        <div class="hero__image-wrap">
-          <img src="images/hero-room.jpg" alt="Allan's counselling room in Fareham: a yellow armchair, a bookshelf, plants and soft lamps" class="hero__image" width="1200" height="1500">
+          <h1 class="hero__heading"><img src="images/logo-full.png" alt="Allan Salmon Counselling" width="400" height="577"></h1>
         </div>
       </div>
     </section>
     <!-- /SECTION: hero -->
 
-    <!-- SECTION: why-work-with-me -->
-    <section class="section section--alt reveal">
+    <!-- SECTION: about -->
+    <section class="section band band--1 reveal" id="about">
       <div class="container split split--reverse split--text-wide">
-      <div class="split__content">
-        <span class="section-label">About me</span>
-        <h2>Am I the right counsellor for you?</h2>
-        <p>I wonder if you are noticing any of the following in your life:</p>
-        <ul class="checklist">
-              <li class="checklist__item">Feeling anxious or overwhelmed</li>
-              <li class="checklist__item">People-pleasing or masking</li>
-              <li class="checklist__item">A history of feeling dismissed or invalidated</li>
-              <li class="checklist__item">Difficulties with relationships, trust or boundaries</li>
-              <li class="checklist__item">Experiences of abuse</li>
-            </ul>
-        <p>I run my own private practice in Fareham, offering sessions both in person and online. I also work as a counsellor for Paragon/The You Trust, a charity supporting those affected by trauma, domestic abuse, sexual abuse and addiction.</p>
-        <a href="about.html" class="btn btn--primary">More about me</a>
-      </div>
-      <img src="images/allan-salmon.jpg" alt="Allan Salmon, counsellor, at his desk" class="split__image split__image--portrait" width="840" height="1050" loading="lazy">
+        <div class="split__content">
+          <span class="section-label">About me</span>
+          <h2>Am I the right counsellor for you?</h2>
+          <p>I wonder if you are noticing any of the following in your life: feeling anxious or overwhelmed, people-pleasing or masking, a history of feeling dismissed or invalidated, difficulties with relationships, trust or boundaries, or experiences of abuse.</p>
+          <p>Being truly heard and seen can be a rare and powerful experience, especially if the relationships in your life have been difficult or complicated. Counselling can be a space for you to make sense of your past, to honour the present, and to move towards a future that's right for you.</p>
+          <p>I run my own private practice in Fareham, offering sessions both in person and online. I also work as a counsellor for Paragon/The You Trust, a charity supporting those affected by trauma, domestic abuse, sexual abuse and addiction.</p>
+        </div>
+        <img src="images/allan-salmon.jpg" alt="Allan Salmon, counsellor, at his desk" class="split__image split__image--portrait" width="840" height="1050" loading="lazy">
       </div>
     </section>
-    <!-- /SECTION: why-work-with-me -->
+    <!-- /SECTION: about -->
 
-    <!-- SECTION: services-overview -->
-    <section class="section reveal">
+    <!-- SECTION: services -->
+    <section class="section reveal" id="services">
       <div class="container text-center">
         <span class="section-label">How I can help</span>
         <h2>Support tailored to you</h2>
@@ -156,54 +127,110 @@
           <div class="card__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></div>
           <h3 class="card__title">I support my clients to</h3>
           <ul class="checklist">
-              <li class="checklist__item">Explore unhelpful patterns and feelings of being stuck</li>
-              <li class="checklist__item">Re-connect with your physical body and emotions</li>
-              <li class="checklist__item">Reduce feelings of anxiety, depression, shame and pain</li>
-              <li class="checklist__item">Increase clarity, empowerment, self-esteem and understanding</li>
-              <li class="checklist__item">Improve relationships with yourself and others</li>
-            </ul>
+            <li class="checklist__item">Explore unhelpful patterns and feelings of being stuck</li>
+            <li class="checklist__item">Re-connect with your physical body and emotions</li>
+            <li class="checklist__item">Reduce feelings of anxiety, depression, shame and pain</li>
+            <li class="checklist__item">Increase clarity, empowerment, self-esteem and understanding</li>
+            <li class="checklist__item">Improve relationships with yourself and others</li>
+          </ul>
         </div>
         <div class="card">
           <div class="card__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg></div>
-          <h3 class="card__title">Therapeutic approaches</h3>
+          <h3 class="card__title">Therapeutic Approaches</h3>
           <ul class="checklist">
-              <li class="checklist__item">Integrative Counselling</li>
-              <li class="checklist__item">Person-Centred Therapy</li>
-              <li class="checklist__item">Psychodynamic Therapy</li>
-              <li class="checklist__item">Cognitive Behavioural Therapy (CBT)</li>
-              <li class="checklist__item">Somatic Therapy</li>
-              <li class="checklist__item">Transactional Analysis</li>
-              <li class="checklist__item">Sand Tray Therapy</li>
-              <li class="checklist__item">Mindfulness</li>
-            </ul>
+            <li class="checklist__item">Integrative Counselling</li>
+            <li class="checklist__item">Person-Centred Therapy</li>
+            <li class="checklist__item">Psychodynamic Therapy</li>
+            <li class="checklist__item">Cognitive Behavioural Therapy (CBT)</li>
+            <li class="checklist__item">Somatic Therapy</li>
+            <li class="checklist__item">Transactional Analysis</li>
+            <li class="checklist__item">Sand Tray Therapy</li>
+            <li class="checklist__item">Mindfulness</li>
+          </ul>
         </div>
         <div class="card">
           <div class="card__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg></div>
-          <h3 class="card__title">Areas I work with</h3>
+          <h3 class="card__title">Areas I Work With</h3>
           <ul class="checklist">
-              <li class="checklist__item">Anxiety and panic attacks</li>
-              <li class="checklist__item">Depression and low mood</li>
-              <li class="checklist__item">Trauma and PTSD</li>
-              <li class="checklist__item">Abuse and domestic violence</li>
-              <li class="checklist__item">Addiction</li>
-              <li class="checklist__item">Self-esteem and confidence</li>
-              <li class="checklist__item">Relationship difficulties</li>
-              <li class="checklist__item">ADHD and neurodiversity</li>
-            </ul>
+            <li class="checklist__item">Anxiety and Panic Attacks</li>
+            <li class="checklist__item">Depression and Low Mood</li>
+            <li class="checklist__item">Trauma and PTSD</li>
+            <li class="checklist__item">Abuse and Domestic Violence</li>
+            <li class="checklist__item">Addiction</li>
+            <li class="checklist__item">Self-Esteem and Confidence</li>
+            <li class="checklist__item">Relationship Difficulties</li>
+            <li class="checklist__item">ADHD and Neurodiversity</li>
+          </ul>
         </div>
       </div>
-      <div class="container text-center">
-        <a href="services.html" class="btn btn--secondary">More about how I can help</a>
+      <div class="container container--narrow text-center">
+        <p>My counselling room is equipped with fidget toys, low lighting, comfy chairs, cards, sandtrays, sound-bowls, pens and pencils: all kinds of different things to help make counselling feel safe and effective for you.</p>
       </div>
     </section>
-    <!-- /SECTION: services-overview -->
+    <!-- /SECTION: services -->
+
+    <!-- SECTION: creative-tools -->
+    <section class="section band band--2" id="creative-tools">
+      <div class="container text-center">
+        <span class="section-label">Ways we might work together</span>
+        <h2>Creative tools for your sessions</h2>
+        <p class="section-subtitle">Sometimes words aren't quite enough, and it can help to explore things in a different way. These are some of the creative tools we might use together when talking doesn't feel like the right fit.</p>
+      </div>
+      <div class="container">
+        <div class="grid grid--3 reveal reveal-trigger">
+          <article class="card card--image-top">
+            <div class="card__image-wrap"><img src="images/tools-archetype-cards.jpg" alt="Illustrated archetype cards laid out on a wooden table" class="card__image" width="900" height="1200" loading="lazy"></div>
+            <div class="card__body">
+              <h3 class="card__title">Archetype Cards</h3>
+              <p class="card__text">Explore the roles and patterns that shape how you relate to yourself and others.</p>
+            </div>
+          </article>
+          <article class="card card--image-top">
+            <div class="card__image-wrap"><img src="images/tools-therapy-cards.jpg" alt="Hand-painted therapy cards spread on a table" class="card__image" width="900" height="1200" loading="lazy"></div>
+            <div class="card__body">
+              <h3 class="card__title">Therapy Cards</h3>
+              <p class="card__text">Beautifully illustrated cards that help name feelings and experiences that are hard to put into words.</p>
+            </div>
+          </article>
+          <article class="card card--image-top">
+            <div class="card__image-wrap"><img src="images/tools-values-cards.jpg" alt="Colourful values cards with words like family and adventure" class="card__image" width="900" height="1200" loading="lazy"></div>
+            <div class="card__body">
+              <h3 class="card__title">Values Cards</h3>
+              <p class="card__text">Discover what matters most to you: a hands-on way to explore your core values.</p>
+            </div>
+          </article>
+          <article class="card card--image-top">
+            <div class="card__image-wrap"><img src="images/tools-journey-cards.jpg" alt="Round painted journey cards showing landscapes and a compass" class="card__image" width="900" height="1200" loading="lazy"></div>
+            <div class="card__body">
+              <h3 class="card__title">Journey Cards</h3>
+              <p class="card__text">Visual prompts that invite reflection on where you are and where you'd like to be.</p>
+            </div>
+          </article>
+          <article class="card card--image-top">
+            <div class="card__image-wrap"><img src="images/tools-sand-tray.jpg" alt="A glass gem and a small purple figure in patterned sand" class="card__image" width="900" height="1200" loading="lazy"></div>
+            <div class="card__body">
+              <h3 class="card__title">Sand Tray Therapy</h3>
+              <p class="card__text">A powerful, wordless way to explore feelings and experiences using miniature figures and sand.</p>
+            </div>
+          </article>
+          <article class="card card--image-top">
+            <div class="card__image-wrap"><img src="images/tools-sandstory-scene.jpg" alt="A sand tray scene with a little chair, stones and figures" class="card__image" width="900" height="1200" loading="lazy"></div>
+            <div class="card__body">
+              <h3 class="card__title">Sandstory Scenes</h3>
+              <p class="card__text">Building scenes in the sand tray can reveal patterns and feelings that are difficult to express with words alone.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- /SECTION: creative-tools -->
 
     <!-- SECTION: the-space -->
-    <section class="section band band--3">
+    <section class="section" id="the-space">
       <div class="container text-center">
         <span class="section-label">The space</span>
         <h2>Your counselling room</h2>
-        <p class="section-subtitle">I want you to feel at ease from the moment you walk in. The room is warm, softly lit and full of small comforts. Here's a peek at what to expect.</p>
+        <p class="section-subtitle">I want you to feel at ease from the moment you walk in. The room is warm, softly lit, and full of small comforts. Here's a peek at what to expect.</p>
       </div>
       <div class="container">
         <div class="gallery reveal reveal-trigger">
@@ -216,34 +243,138 @@
     </section>
     <!-- /SECTION: the-space -->
 
-    <!-- SECTION: trust -->
-    <section class="section reveal">
-      <div class="container split split--reverse">
-        <div class="split__content">
-          <span class="section-label">Accredited and checked</span>
-          <h2>Counselling you can trust</h2>
-          <p>I am an accredited member of the National Counselling and Psychotherapy Society, MNCPS Acc. (MNCPS2537), and DBS checked.</p>
+    <!-- SECTION: what-to-expect -->
+    <section class="section band band--3" id="what-to-expect">
+      <div class="container text-center">
+        <span class="section-label">Getting started</span>
+        <h2>What to expect</h2>
+      </div>
+      <div class="container container--narrow">
+        <div class="alert alert--themed">
+          <p><strong>Please note, I am currently fully booked at the moment,</strong> but if you would like to work with me in future please feel free to drop me a message to arrange an introductory meeting (online or in person). During our meeting we can discuss our availability and waiting list times. Thank you, Allan.</p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="steps steps--connected reveal reveal-trigger">
+          <div class="step"><div class="step__number">1</div><h3 class="step__title">Free Chemistry Call</h3><p class="step__text">A free 20-minute call, by phone or Google Meet, where you can get a sense of how it feels to be in conversation with me, ask questions, and share a little about why you'd like to come to counselling.</p></div>
+          <div class="step"><div class="step__number">2</div><h3 class="step__title">First Session</h3><p class="step__text">If after the call you'd like to book, we'll arrange a first session. This allows us to talk about the finer points of counselling and explore ways we can make it work for you.</p></div>
+          <div class="step"><div class="step__number">3</div><h3 class="step__title">Ongoing Support</h3><p class="step__text">Sessions are available weekly or bi-weekly, in person at my Fareham practice or online via Google Meet. We work at your pace, for as long as feels right.</p></div>
+        </div>
+      </div>
+    </section>
+    <!-- /SECTION: what-to-expect -->
+
+    <!-- SECTION: fees -->
+    <section class="section reveal" id="fees">
+      <div class="container text-center">
+        <span class="section-label">Pricing</span>
+        <h2>Fees</h2>
+      </div>
+      <div class="container container--narrow text-center">
+        <div class="pricing-single">
+          <div class="pricing-card pricing-card--featured">
+            <span class="pricing-card__badge">All Sessions</span>
+            <div class="pricing-card__price">£60</div>
+            <p class="pricing-card__duration">per session</p>
+            <ul class="pricing-card__features">
+              <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg> Online or in person</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg> Weekly or bi-weekly</li>
+            </ul>
+          </div>
+        </div>
+        <p>I offer a concessionary rate of £40 for trainee counsellors who are enrolled in a professionally recognised qualifying course (Level 4 or above).</p>
+      </div>
+    </section>
+    <!-- /SECTION: fees -->
+
+    <!-- SECTION: contact -->
+    <section class="section band band--4 reveal" id="contact">
+      <div class="container text-center">
+        <span class="section-label">Get in touch</span>
+        <h2>Ready to take the first step?</h2>
+        <p class="section-subtitle">If you'd like to know more, I offer a free 20-minute chemistry call. There's no pressure. It's simply a chance to see if we're a good fit. The easiest way to reach me is by message, WhatsApp or email.</p>
+      </div>
+      <div class="container contact-grid" id="contact-form">
+        <div class="contact-info">
+          <div class="contact-info__item">
+            <div class="contact-info__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg></div>
+            <div>
+              <p class="contact-info__label">Message or WhatsApp</p>
+              <p class="contact-info__value"><a href="https://wa.me/447404399420" target="_blank" rel="noopener">07404 399 420</a></p>
+            </div>
+          </div>
+          <div class="contact-info__item">
+            <div class="contact-info__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></div>
+            <div>
+              <p class="contact-info__label">Email</p>
+              <p class="contact-info__value"><a href="mailto:hello@allansalmon.com">hello@allansalmon.com</a></p>
+            </div>
+          </div>
+          <div class="contact-info__item">
+            <div class="contact-info__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></div>
+            <div>
+              <p class="contact-info__label">Location</p>
+              <p class="contact-info__value">Fareham, PO16</p>
+            </div>
+          </div>
+          <div class="contact-info__item">
+            <div class="contact-info__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg></div>
+            <div>
+              <p class="contact-info__label">Sessions</p>
+              <p class="contact-info__value">In person and online (Google Meet)</p>
+            </div>
+          </div>
+          <div class="cta-banner__buttons">
+            <a href="https://wa.me/447404399420" class="btn btn--whatsapp" target="_blank" rel="noopener">Message me on WhatsApp</a>
+            <a href="mailto:hello@allansalmon.com" class="btn btn--secondary">Email me</a>
+          </div>
           <div class="trust-bar trust-bar--colour">
             <img class="trust-bar__logo" src="images/ncps-logo.png" alt="National Counselling and Psychotherapy Society" width="520" height="213" loading="lazy">
           </div>
         </div>
-        <img src="images/logo-full.png" alt="Allan Salmon Counselling logo: a yellow circle of rings" width="400" height="577" loading="lazy">
+        <div class="contact-form-wrap">
+          <div class="card contact-form-card">
+            <h3>Send me a message</h3>
+            <form class="form" action="https://editmy.site/api/form/{site_id}" method="POST">
+              <div hidden><input type="text" name="_hp" tabindex="-1" autocomplete="off"></div>
+              <input type="hidden" name="_t" value="">
+              <input type="hidden" name="_page" value="">
+              <div class="form__row">
+                <div class="form__group">
+                  <label for="name" class="form__label form__label--required">Your name</label>
+                  <input type="text" id="name" name="name" class="form__input" required autocomplete="name">
+                </div>
+                <div class="form__group">
+                  <label for="email" class="form__label form__label--required">Email address</label>
+                  <input type="email" id="email" name="email" class="form__input" required autocomplete="email">
+                </div>
+              </div>
+              <div class="form__group">
+                <label for="phone" class="form__label">Phone number (optional)</label>
+                <input type="tel" id="phone" name="phone" class="form__input" autocomplete="tel">
+              </div>
+              <div class="form__group">
+                <label for="message" class="form__label form__label--required">Your message</label>
+                <textarea id="message" name="message" class="form__textarea" required></textarea>
+              </div>
+              <div class="form__group form__group--checkbox">
+                <input type="checkbox" id="consent" name="consent" required>
+                <label for="consent">I agree to the <a href="privacy.html">privacy policy</a>.</label>
+              </div>
+              <div>
+                <button type="submit" class="btn btn--primary btn--block">Send message</button>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
-    </section>
-    <!-- /SECTION: trust -->
-
-    <!-- SECTION: cta -->
-    <section class="section band band--2 reveal">
-      <div class="container container--narrow text-center">
-        <h2>Ready to take the first step?</h2>
-        <p>If you'd like to know more, I offer a free 20-minute chemistry call. There's no pressure. It's simply a chance to see if we're a good fit.</p>
-        <div class="cta-banner__buttons">
-          <a href="contact.html#contact-form" class="btn btn--primary">Ask about availability</a>
-          <a href="fees.html" class="btn btn--secondary">See fees and what to expect</a>
+      <div class="container">
+        <div class="map-placeholder">
+          <iframe src="https://maps.google.com/maps?q=Fareham%20PO16&amp;z=13&amp;output=embed" width="100%" height="350" title="Map of Fareham, PO16" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </section>
-    <!-- /SECTION: cta -->
+    <!-- /SECTION: contact -->
 
   </main>
 
@@ -253,32 +384,23 @@
       <div class="footer__brand">
         <img src="images/logo-mark.png" alt="" class="footer__logo" width="240" height="240" loading="lazy">
         <p class="footer__brand-name">Allan Salmon Counselling</p>
-        <p class="footer__brand-text">Integrative counselling in Fareham and online. MNCPS Acc. (MNCPS2537), DBS checked.</p>
+        <p class="footer__brand-text">MNCPS Acc. (MNCPS2537) · DBS Checked</p>
       </div>
       <div class="footer__col">
-        <p class="footer__heading">Pages</p>
+        <p class="footer__heading">On this page</p>
         <div class="footer__links">
-          <a href="./" class="footer__link">Home</a>
-          <a href="about.html" class="footer__link">About</a>
-          <a href="services.html" class="footer__link">Services</a>
-          <a href="fees.html" class="footer__link">Fees</a>
-          <a href="contact.html" class="footer__link">Contact</a>
-        </div>
-      </div>
-      <div class="footer__col">
-        <p class="footer__heading">How I can help</p>
-        <div class="footer__links">
-          <a href="services.html#service-areas" class="footer__link">Areas I work with</a>
-          <a href="services.html#service-approaches" class="footer__link">Therapeutic approaches</a>
-          <a href="services.html#creative-tools" class="footer__link">Creative tools</a>
-          <a href="fees.html#what-to-expect" class="footer__link">What to expect</a>
+          <a href="#about" class="footer__link">About</a>
+          <a href="#services" class="footer__link">Services</a>
+          <a href="#what-to-expect" class="footer__link">What to Expect</a>
+          <a href="#fees" class="footer__link">Fees</a>
+          <a href="#contact" class="footer__link">Contact</a>
         </div>
       </div>
       <div class="footer__col">
         <p class="footer__heading">Contact</p>
         <div class="footer__contact-item">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-          <!-- PROFILE:phone_mobile --><a href="tel:07404399420">07404 399 420</a><!-- /PROFILE:phone_mobile -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+          <!-- PROFILE:phone_mobile --><a href="https://wa.me/447404399420" target="_blank" rel="noopener">07404 399 420</a><!-- /PROFILE:phone_mobile -->
         </div>
         <div class="footer__contact-item">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
@@ -327,6 +449,6 @@
     <button class="lightbox__close" aria-label="Close">&times;</button>
   </div>
 
-  <script src="js/main.js?v=1"></script>
+  <script src="js/main.js?v=2"></script>
 </body>
 </html>

@@ -65,7 +65,17 @@
   --nav-title-phone-display: none;
 }
 
-/* Brand bands: his logo yellow carries dark ink; his leaf green keeps the default white */
+/* Brand bands, one-page layout (Allan, 09-11-2026: "starts off brown and then goes a bit more purple").
+   Down the page the tinted bands move from warm brown (1) through taupe (2) and mauve (3) to deeper mauve (4),
+   ending on the plum footer. All light, so all carry dark ink. */
 :root {
+  --color-bg-alt: #EFE2D4;
+  --band-1-bg: #EDE0D2;
+  --band-1-text: #2F2129;
+  --band-2-bg: #E6D9D3;
   --band-2-text: #2F2129;
+  --band-3-bg: #E4D7E1;
+  --band-3-text: #2F2129;
+  --band-4-bg: #DCCBDB;
+  --band-4-text: #2F2129;
 }
