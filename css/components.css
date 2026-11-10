@@ -12415,7 +12415,7 @@ h2 {
 
 /* v1.7.27 (10-11-2026): .steps--numerals - the same steps with a large, light
    numeral (write it as 01, 02, 03) in place of the dark circle, and the step
-   title at full h3 size. Centred on phones, left-aligned from 768px. Made for
+   title at full h3 size, all centred. Made for
    a converted site whose original used big thin sage numbers (allansalmon.com).
    Token: --step-numeral-color (defaults to the accent colour). Do not combine
    with .steps--connected: the connector line is drawn for the circle. */
@@ -12441,8 +12441,14 @@ h2 {
   margin-bottom: var(--space-md);
 }
 
-@media (min-width: 768px) {
-  .steps--numerals .step {
-    text-align: left;
-  }
+/* v1.7.27 (10-11-2026): .nav--sticky - the full header stays at the top of the
+   screen while the page scrolls (allansalmon.com's original did this). Anchor
+   links land below it. Use instead of .nav-scroll, not with it. */
+.nav--sticky {
+  position: sticky;
+  top: 0;
+}
+
+html:has(.nav--sticky) {
+  scroll-padding-top: var(--nav-height, 72px);
 }
