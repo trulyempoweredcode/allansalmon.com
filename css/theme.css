@@ -102,6 +102,12 @@
   /* Generous section spacing, as on the original */
   --section-padding-desktop: 8rem;
 
+  /* Heading line spacing, close to the original's 1.0 */
+  --line-height-tight: 1.1;
+
+  /* Box titles: 24px gap above their lists, as on the original */
+  --card-title-gap: 1.5rem;
+
   /* Light footer, as on the original */
   --footer-card-bg: #F0EBE6;
 }
