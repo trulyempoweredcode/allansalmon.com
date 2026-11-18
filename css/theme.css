@@ -88,7 +88,7 @@
   --btn-tracking: normal;
 
   /* Header: text wordmark, small muted links */
-  --nav-height: 99px;
+  --nav-height: 72px; /* Allan, 18-11-2026: a thinner header that takes up less of the screen */
   --nav-name-size: 1.5rem;
   --nav-name-weight: 500;
   --nav-name-color: #352D27;
@@ -128,4 +128,12 @@
   --band-3-text: #352D27;
   --band-4-bg: #EDE6EC;
   --band-4-text: #352D27;
+}
+
+/* Phone header wordmark at his original site's size (20px name, 11px line under it), so the thinner bar still has air */
+@media (max-width: 767px) {
+  :root {
+    --nav-name-size: 1.25rem;
+    --nav-title-size: 0.6875rem;
+  }
 }
