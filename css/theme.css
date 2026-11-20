@@ -118,7 +118,9 @@
 }
 
 /* Alternate bands: original greige drifting to a faint mauve down the page
-   (Allan, 09-11-2026: "starts off brown and then goes a bit more purple"). All carry dark ink. */
+   (Allan, 09-11-2026: "starts off brown and then goes a bit more purple"). All carry dark ink.
+   Band 4 is his logo yellow (#FAC800) at about 16% on the page colour, used on Support tailored
+   to you and Pricing (Allan, 20-11-2026: "a translucent version of that logo colour"). */
 :root {
   --band-1-bg: #F0EBE6;
   --band-1-text: #352D27;
@@ -126,7 +128,7 @@
   --band-2-text: #352D27;
   --band-3-bg: #EEE8EA;
   --band-3-text: #352D27;
-  --band-4-bg: #EDE6EC;
+  --band-4-bg: #F8EECB;
   --band-4-text: #352D27;
 }
 
